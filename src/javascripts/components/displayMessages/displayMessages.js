@@ -1,5 +1,6 @@
 import chats from '../../helpers/data/messages';
 import utilities from '../../helpers/utilities';
+import './displayMessages.scss';
 
 const messagesPrint = () => {
   let messageString = '<div class="row">';
@@ -8,10 +9,10 @@ const messagesPrint = () => {
     const message = messages[i];
     messageString += `
     <div class="col">
-      <div id="${message.id}" class="card">
+      <div id="${message.id}" class="card" style="width: 20rem">
         <div class="card-body">
           <p class="card-text">${message.message}</p>
-          <a href="#" class="btn btn-primary btn-sm align-items-end flex-row">Go somewhere</a>
+          <button id="delete" class="btn btn-primary btn-sm">Delete</button>
         </div>
       </div>
     </div>
