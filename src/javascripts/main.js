@@ -4,6 +4,7 @@ import messageCards from './components/displayMessages/displayMessages';
 
 const init = () => {
   messageCards.messagesPrint();
+  messageCards.attachEvent();
 };
 
 init();
