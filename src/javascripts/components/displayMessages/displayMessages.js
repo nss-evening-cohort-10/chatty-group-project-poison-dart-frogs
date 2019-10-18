@@ -42,12 +42,12 @@ const deleteButton = () => {
   const deleteButtons = $('.d-flex').children('.delete');
   for (let j = 0; j < deleteButtons.length; j += 1) {
     const singleDeleteButton = deleteButtons[j];
-    singleDeleteButton.addEventListener('click', deleteClick);
+    $(singleDeleteButton).click(deleteClick);
   }
 };
 
 const attachEvent = () => {
-  $(document).click(deleteButton);
+  $(document).on('click', deleteButton);
 };
 
 export default { messagesPrint, attachEvent };
