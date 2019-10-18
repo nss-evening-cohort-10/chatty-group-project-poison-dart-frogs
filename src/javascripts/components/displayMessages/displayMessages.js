@@ -30,7 +30,6 @@ const messagesPrint = () => {
 const deleteClick = (e) => {
   const messages = chats.getChats();
   const deleteChat = $(e.target).parents('.card-body').find('p').html();
-  console.log(deleteChat);
   for (let k = 0; k < messages.length; k += 1) {
     if (messages[k].message === deleteChat) {
       messages.splice(k, 1);
@@ -40,7 +39,6 @@ const deleteClick = (e) => {
 };
 
 const deleteButton = () => {
-  chats.getChats();
   const deleteButtons = $('.d-flex').children('.delete');
   for (let j = 0; j < deleteButtons.length; j += 1) {
     const singleDeleteButton = deleteButtons[j];
@@ -49,7 +47,7 @@ const deleteButton = () => {
 };
 
 const attachEvent = () => {
-  $(document).on('click', '.delete', deleteButton);
+  $(document).click(deleteButton);
 };
 
 export default { messagesPrint, attachEvent };
