@@ -12,7 +12,7 @@ const messagesPrint = () => {
     const message = messages[i];
     messageString += `
     <div class="col card">
-      <div id="${message.id}">
+      <div>
         <div class="card-body">
           <p class="card-text">${message.message}</p>
           <div class="d-flex justify-content-between">
