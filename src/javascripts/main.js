@@ -1,4 +1,9 @@
 import '../styles/main.scss';
 import 'bootstrap';
+import navbar from './components/navBar/navBar';
 
-console.log('hi');
+const init = () => {
+  navbar.loadNavbar();
+};
+
+init();
