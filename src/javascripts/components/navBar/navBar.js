@@ -11,7 +11,7 @@ const loadNavbar = () => {
     
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Enter Message" aria-label="Search">
+            <input class="form-control mr-sm-2" type="text" id="messageInput" placeholder="Enter Message" aria-label="Search">
           </form>
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               More Settings
@@ -24,7 +24,7 @@ const loadNavbar = () => {
               &nbsp;<input type="checkbox" href="#"> &nbsp;&nbsp;&nbsp;&nbsp; More Themes</input>
             </div>
       </div>
-    </nav>
+  </nav>
   `;
   utilities.printToDom('navBar', domString);
 };
