@@ -5,9 +5,6 @@ import './displayMessages.scss';
 
 const nowDate = new Date();
 
-const eDisplayDate = document.getElementById('displayJsDate');
-eDisplayDate.innerHTML = nowDate;
-
 const messagesPrint = () => {
   let messageString = '<div class="row">';
   const messages = chats.getChats();
