@@ -1,4 +1,10 @@
 import '../styles/main.scss';
 import 'bootstrap';
+import messageCards from './components/displayMessages/displayMessages';
 
-console.log('hi');
+const init = () => {
+  messageCards.messagesPrint();
+  messageCards.deleteEvent();
+};
+
+init();
