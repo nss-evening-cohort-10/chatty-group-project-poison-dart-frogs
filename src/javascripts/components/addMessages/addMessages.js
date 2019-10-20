@@ -1,13 +1,17 @@
 import $ from 'jquery';
 import chats from '../../helpers/data/messages';
-import display from '../displayMessages/displayMessages';
+import displayMessages from '../displayMessages/displayMessages';
 
 const addMessage = () => {
-  const messageInput = $('input:text').val();
-  const newMessage = { message: '' };
-  newMessage.message += messageInput;
-  chats.addChat(newMessage);
-  display.messagesPrint();
+  const messages = chats.getChats();
+  const messageInput = $(document).find('#new-message');
+  const messageValue = $(messageInput).val();
+  messages.push({ message: messageValue });
+  displayMessages.messagesPrint(messages);
+  if (messages.length > 20) {
+    messages.shift();
+    displayMessages.messagesPrint(messages);
+  }
 };
 
 const enterEvent = (e) => {

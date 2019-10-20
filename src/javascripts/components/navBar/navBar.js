@@ -11,10 +11,9 @@ const loadNavbar = () => {
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-    
 
       <div class="collapse navbar-collapse moreSettingsButton" id="navbarSupportedContent">
-        <textarea class="form-control enterMessage" id="new-message" rows="2"></textarea>
+        <input onclick="this.value=''" class="form-control enterMessage" id="new-message" rows="2">
           <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Clear Messages</button>
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               More Settings
@@ -27,7 +26,7 @@ const loadNavbar = () => {
               &nbsp;<input type="checkbox" href="#"> &nbsp;&nbsp;&nbsp;&nbsp; More Themes</input>
             </div>
       </div>
-    </nav>
+  </nav>
   `;
   utilities.printToDom('navBar', domString);
 };
