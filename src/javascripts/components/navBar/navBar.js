@@ -14,7 +14,7 @@ const loadNavbar = () => {
 
       <div class="collapse navbar-collapse moreSettingsButton" id="navbarSupportedContent">
         <input onclick="this.value=''" class="form-control enterMessage" id="new-message" rows="2">
-          <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Clear Messages</button>
+          <button class="btn btn-outline-danger my-2 my-sm-0" id="clearButton" type="submit">Clear Messages</button>
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               More Settings
             </a>
