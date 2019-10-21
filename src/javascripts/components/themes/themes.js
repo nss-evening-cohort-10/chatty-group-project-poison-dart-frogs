@@ -38,4 +38,17 @@ const chooseLargeText = () => {
   });
 };
 
-export default { chooseDarkMode, chooseLargeText };
+const applyMoreThemes = () => {
+  let bgColor = '';
+  let textColor = '';
+  $(document).ready(() => {
+    $('#apply-themes').on('click', () => {
+      bgColor = document.getElementById('background').value;
+      textColor = document.getElementById('text').value;
+      $('body').css('background-color', bgColor);
+      $('.card-text').css('color', textColor);
+    });
+  });
+};
+
+export default { chooseDarkMode, chooseLargeText, applyMoreThemes };
