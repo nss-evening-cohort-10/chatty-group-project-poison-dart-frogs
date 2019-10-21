@@ -1,6 +1,7 @@
 import $ from 'jquery';
 import chats from '../../helpers/data/messages';
 import displayMessages from '../displayMessages/displayMessages';
+import utilities from '../../helpers/utilities';
 
 const addMessage = () => {
   const messages = chats.getChats();
@@ -26,4 +27,14 @@ const attachEnterEvent = () => {
   $('#new-message').on('keypress', enterEvent);
 };
 
-export default { attachEnterEvent };
+const clearMessages = () => {
+  const messages = chats.getChats();
+  messages.length = 0;
+  utilities.printToDom('defaultMessages', messages);
+};
+
+const clearMessagesClick = () => {
+  $(document).on('click', '#clearButton', clearMessages);
+};
+
+export default { attachEnterEvent, clearMessagesClick };
