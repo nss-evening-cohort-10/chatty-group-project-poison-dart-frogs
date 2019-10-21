@@ -7,11 +7,14 @@ const addMessage = () => {
   const messages = chats.getChats();
   const messageInput = $(document).find('#new-message');
   const messageValue = $(messageInput).val();
-  messages.push({ message: messageValue });
+  const newMessage = { message: messageValue };
+  messages.push(newMessage);
   displayMessages.messagesPrint(messages);
   if (messages.length > 20) {
     messages.shift();
     displayMessages.messagesPrint(messages);
+  } else if (messages.length === 0) {
+    displayMessages.messagesPrint(newMessage);
   }
 };
 
