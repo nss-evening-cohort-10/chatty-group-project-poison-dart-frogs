@@ -14,7 +14,7 @@ const loadNavbar = () => {
 
       <div class="collapse navbar-collapse moreSettingsButton" id="navbarSupportedContent">
         <input onclick="this.value=''" class="form-control enterMessage" id="new-message" rows="2">
-          <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Clear Messages</button>
+          <button class="btn btn-outline-danger my-2 my-sm-0" id="clearButton" type="submit">Clear Messages</button>
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               More Settings
             </a>
@@ -23,7 +23,12 @@ const loadNavbar = () => {
               <br>
               &nbsp;<input type="checkbox" href="#" class="largeTxtBox"> &nbsp;&nbsp;&nbsp;&nbsp; Large Text</input>
               <div class="dropdown-divider"></div>
+<<<<<<< HEAD
               <a class="dropdown-item" href="#" data-toggle="modal" data-target="#moreThemes">More Themes</a>
+=======
+              &nbsp;<input type="checkbox" id="modal" data-toggle="modal" data-target="#exampleModal" href="#"> &nbsp;&nbsp;&nbsp;&nbsp; More Themes
+              </input>
+>>>>>>> master
             </div>
       </div>
   </nav>

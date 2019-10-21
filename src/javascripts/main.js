@@ -13,6 +13,7 @@ const init = () => {
   darkMode.chooseDarkMode();
   darkMode.chooseLargeText();
   darkMode.applyMoreThemes();
+  addMessages.clearMessagesClick();
 };
 
 init();
