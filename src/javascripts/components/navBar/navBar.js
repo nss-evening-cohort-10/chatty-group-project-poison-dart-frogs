@@ -17,7 +17,7 @@ const loadNavbar = () => {
               More Settings
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              &nbsp;<input type="checkbox" href="#" id="darkThemebox"> &nbsp;&nbsp;&nbsp;&nbsp; Dark Mode</input>
+              &nbsp;<input type="checkbox" href="#" class="darkThemeBox"> &nbsp;&nbsp;&nbsp;&nbsp; Dark Mode</input>
               <br>
               &nbsp;<input type="checkbox" href="#"> &nbsp;&nbsp;&nbsp;&nbsp; Large Text</input>
               <div class="dropdown-divider"></div>
