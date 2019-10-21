@@ -6,7 +6,6 @@ const chooseDarkMode = () => {
     $('.darkThemeBox').on('click', () => {
       if ($('.darkThemeBox').prop('checked')) {
         $('#body').addClass('dark-mode');
-        // darklightMode();
       } else {
         $('#body').removeClass('dark-mode');
       }
