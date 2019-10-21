@@ -12,17 +12,14 @@ import './themes.scss';
 // };
 
 const chooseDarkMode = () => {
-  console.error('hi');
   $(document).ready(function () {
     $('.darkThemeBox').on('click', () => {
       console.error(this);
       if ($('.darkThemeBox').prop('checked')) {
         $('#body').addClass('dark-mode');
-        console.error('line2');
         // darklightMode();
       } else {
         $('#body').removeClass('dark-mode');
-        console.error('line3');
       }
     });
   });
