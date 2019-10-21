@@ -1,6 +1,7 @@
 $dark-color: #111;
 $light-color: #eee;
 $button-background: lightblue;
+$halloween-color: orange;
 
 .dark-mode {
   background-color: $dark-color;
@@ -8,15 +9,19 @@ $button-background: lightblue;
   a {
     color: $dark-color;
   }
-  .card-body{
-    background-color: $dark-color;
-  }
-  dropdown-menu {
+  .dropdown-menu-right {
     background-color: $light-color;
     color: $dark-color;
   }
   .delete{
-    background-color: $button-background;
+    background-color: $halloween-color;
+  }
+  p{
+    color: $halloween-color;
+  }
+  .differentCards{
+    background-color: $dark-color;
+    box-shadow:  0px 5px 5px 10px $halloween-color;
   }
 }
 
