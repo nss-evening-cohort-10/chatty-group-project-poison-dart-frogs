@@ -25,9 +25,10 @@ const chooseLargeText = () => {
   });
 };
 
+let bgColor = '';
+let textColor = '';
+
 const applyMoreThemes = () => {
-  let bgColor = '';
-  let textColor = '';
   $(document).ready(() => {
     $('#apply-themes').on('click', () => {
       bgColor = document.getElementById('background').value;

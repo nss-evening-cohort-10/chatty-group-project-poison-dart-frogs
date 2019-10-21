@@ -23,12 +23,8 @@ const loadNavbar = () => {
               <br>
               &nbsp;<input type="checkbox" href="#" class="largeTxtBox"> &nbsp;&nbsp;&nbsp;&nbsp; Large Text</input>
               <div class="dropdown-divider"></div>
-<<<<<<< HEAD
               <a class="dropdown-item" href="#" data-toggle="modal" data-target="#moreThemes">More Themes</a>
-=======
-              &nbsp;<input type="checkbox" id="modal" data-toggle="modal" data-target="#exampleModal" href="#"> &nbsp;&nbsp;&nbsp;&nbsp; More Themes
-              </input>
->>>>>>> master
+
             </div>
       </div>
   </nav>
