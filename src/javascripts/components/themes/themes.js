@@ -25,4 +25,17 @@ const chooseDarkMode = () => {
   });
 };
 
-export default { chooseDarkMode };
+const chooseLargeText = () => {
+  $(document).ready(function () {
+    $('.largeTxtBox').on('click', () => {
+      console.error('he', this);
+      if ($('.largeTxtBox').prop('checked')) {
+        $('.card').addClass('large-font');
+      } else {
+        $('.card').removeClass('large-font');
+      }
+    });
+  });
+};
+
+export default { chooseDarkMode, chooseLargeText };

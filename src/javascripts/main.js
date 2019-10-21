@@ -11,6 +11,7 @@ const init = () => {
   navbar.loadNavbar();
   addMessages.attachEnterEvent();
   darkMode.chooseDarkMode();
+  darkMode.chooseLargeText();
 };
 
 init();
