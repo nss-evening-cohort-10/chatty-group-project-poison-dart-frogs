@@ -8,10 +8,10 @@ const addMessage = () => {
   const messageInput = $(document).find('#new-message');
   const messageValue = $(messageInput).val();
   const newMessage = { message: messageValue };
-  messages.push(newMessage);
+  messages.unshift(newMessage);
   displayMessages.messagesPrint(messages);
   if (messages.length > 20) {
-    messages.shift();
+    messages.pop();
     displayMessages.messagesPrint(messages);
   } else if (messages.length === 0) {
     displayMessages.messagesPrint(newMessage);

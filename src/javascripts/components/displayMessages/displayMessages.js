@@ -1,10 +1,9 @@
 import $ from 'jquery';
+import moment from 'moment';
 import chats from '../../helpers/data/messages';
 import utilities from '../../helpers/utilities';
 import themes from '../themes/themes';
 import './displayMessages.scss';
-
-const nowDate = new Date();
 
 const messagesPrint = () => {
   let messageString = '<div class="row">';
@@ -17,7 +16,7 @@ const messagesPrint = () => {
         <div class="card-body">
           <p class="card-text">${message.message}</p>
           <div class="d-flex justify-content-between">
-            <p>${nowDate}</p>
+            <p>${moment().format('lll')}</p>
             <button class="btn btn-primary delete">Delete</button>
           </div>  
         </div>
