@@ -13,6 +13,8 @@ Chat World will allow users to:
 
 # Screenshots
 
+![Main View](https://github.com/nss-evening-cohort-10/chatty-group-project-poison-dart-frogs/blob/master/src/screenshots/Screen%20Shot%202019-10-22%20at%2017.59.37.png)
+
 
 # How to use
 
