@@ -39,4 +39,10 @@ const applyMoreThemes = () => {
   });
 };
 
-export default { chooseDarkMode, chooseLargeText, applyMoreThemes };
+const updateTextColor = () => {
+  $('.card-text').css('color', textColor);
+};
+
+export default {
+  chooseDarkMode, chooseLargeText, applyMoreThemes, updateTextColor,
+};
