@@ -25,4 +25,24 @@ const chooseLargeText = () => {
   });
 };
 
-export default { chooseDarkMode, chooseLargeText };
+let bgColor = '';
+let textColor = '';
+
+const applyMoreThemes = () => {
+  $(document).ready(() => {
+    $('#apply-themes').on('click', () => {
+      bgColor = document.getElementById('background').value;
+      textColor = document.getElementById('text').value;
+      $('body').css('background-color', bgColor);
+      $('.card-text').css('color', textColor);
+    });
+  });
+};
+
+const updateTextColor = () => {
+  $('.card-text').css('color', textColor);
+};
+
+export default {
+  chooseDarkMode, chooseLargeText, applyMoreThemes, updateTextColor,
+};

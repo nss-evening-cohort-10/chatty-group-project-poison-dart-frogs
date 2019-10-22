@@ -2,6 +2,7 @@ import $ from 'jquery';
 import moment from 'moment';
 import chats from '../../helpers/data/messages';
 import utilities from '../../helpers/utilities';
+import themes from '../themes/themes';
 import './displayMessages.scss';
 
 const messagesPrint = () => {
@@ -26,6 +27,7 @@ const messagesPrint = () => {
   }
   messageString += '</div>';
   utilities.printToDom('defaultMessages', messageString);
+  themes.updateTextColor();
 };
 
 const deleteClick = (e) => {
