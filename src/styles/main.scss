@@ -3,3 +3,17 @@
 body {
   background-color: lightslategrey;
 }
+
+#nyan-cat {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  transform: scaleX(-1);
+};
+
+#baby-riding-cat {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  padding-right: 4em;
+}
