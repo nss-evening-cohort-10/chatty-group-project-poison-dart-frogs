@@ -4,7 +4,7 @@ import './navBar.scss';
 
 const loadNavbar = () => {
   const domString = `
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="fixed-top navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="#">
       <img src="src/img/ChatWorld.png" height="100" alt="">
       </a>
