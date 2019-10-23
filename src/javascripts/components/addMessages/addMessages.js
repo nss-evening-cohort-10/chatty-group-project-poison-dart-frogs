@@ -33,9 +33,7 @@ const attachEnterEvent = () => {
 
 const messagesButton = () => {
   const messages = chats.getChats();
-  if (messages.length !== 0) {
-    $('#clearButton').attr('disabled', false);
-  } else if (messages.length === 0) {
+  if (messages.length === 0) {
     $('#clearButton').attr('disabled', true);
   }
 };
@@ -45,7 +43,7 @@ const clearMessages = () => {
   if (messages.length !== 0) {
     messages.length = 0;
   }
-  utilities.printToDom('defaultMessages', messages);
+  displayMessages.messagesPrint(messages);
 };
 
 const clearMessagesClick = () => {
